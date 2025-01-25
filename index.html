@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,13 +43,19 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header>
+    <header class="container mx-auto">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a
+              href="#"
+              class="flex items-center justify-center gap-2 lg:text-2xl font-extrabold"
+            >
+              <img src="./assets/arrow-up-right.png" alt="" />
+              Rinterio</a
+            >
           </div>
-          <div class="navbar-center">
+          <div class="navbar-center hidden lg:block">
             <ul class="flex gap-8">
               <li>
                 <a class="font-extrabold text-[#494949]" href="#">Home</a>
@@ -68,13 +74,19 @@
               </li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <span>
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <i class="fa-solid fa-cart-shopping"></i>
-            </span>
-            <button class="bg-[#ABEF5F] rounded-xl py-3 px-5">Book Consult 
-              <span><i class="fa-solid fa-arrow-right"></i></span>
+          <div class="navbar-end gap-5">
+            <div class="flex items-center justify-center gap-3 hidden md:flex">
+              <p><img src="./assets/search.png" alt="" /></p>
+              <p><img src="./assets/cart.png" alt="" /></p>
+              <button
+                class="bg-[#ABEF5F] btn rounded-full font-bold flex items-center justify-center gap-3"
+              >
+                <p>Book Consult</p>
+                <p><img src="./assets/arrow-up-right-01.png" alt="" /></p>
+              </button>
+            </div>
+            <button class="lg:hidden">
+              <img src="./assets/menu.png" alt="" />
             </button>
           </div>
         </div>
